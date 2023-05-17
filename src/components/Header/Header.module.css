@@ -12,26 +12,4 @@
     border-top: 1px solid #fff;
     
 }
-.signBtns {
-    margin-top: 20px;
-    display: flex;
-}
-.button {
-    font-size: 1.7rem;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    width: 118px;
-    height: 48px;
-    border: none;
-    border-radius: 40px;
-    cursor: pointer;
-    background-color: #fff;
-}
-.signUp {
-    color: #FFF;
-    background-color: #000;
-    transition: background-color 0.3s ease-in-out ;
-}
-.signUp:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-}
+
