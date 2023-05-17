@@ -12,6 +12,10 @@ const Header = () => {
         <nav class={styles.signBtns}>
           {/* <button class={`${styles.signIn} ${styles.button}`}>Sign In</button>
           <button class={`${styles.signUp} ${styles.button}`}>Sign Up</button> */}
+          <Button variant="text">Sign In</Button>
+          <Button variant="contained" disableElevation>
+            Sign Up
+          </Button>
         </nav>
       </header>
     </div>
