@@ -1,4 +1,5 @@
 import styles from "./Header.module.css";
+import logo from "../../assets/images/heyfoodlogo2.png";
 
 const Header = () => {
   return (
