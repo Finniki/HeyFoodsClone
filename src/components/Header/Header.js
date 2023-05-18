@@ -5,15 +5,21 @@ import { Button } from "@mui/material";
 const Header = () => {
   return (
     <div>
-      <header class={styles.header}>
-        <div class={styles.brand}>
-          <img src={logo} class={styles.brandLogo} alt="HeyFoods logo" />
+      <header className={styles.header}>
+        <div className={styles.brand}>
+          <img src={logo} className={styles.brandLogo} alt="HeyFoods logo" />
         </div>
-        <nav class={styles.signBtns}>
+        <nav className={styles.signBtns}>
           {/* <button class={`${styles.signIn} ${styles.button}`}>Sign In</button>
           <button class={`${styles.signUp} ${styles.button}`}>Sign Up</button> */}
-          <Button variant="text">Sign In</Button>
-          <Button variant="contained" disableElevation>
+          <Button variant="text" className={`${styles.button} ${signIn}`}>
+            Sign In
+          </Button>
+          <Button
+            variant="contained"
+            disableElevation
+            className={`${styles.button} ${signUp}`}
+          >
             Sign Up
           </Button>
         </nav>
