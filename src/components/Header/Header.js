@@ -1,6 +1,7 @@
 import styles from "./Header.module.css";
 import logo from "../../assets/images/heyfoodlogo2.png";
 import { Button } from "@mui/material";
+import { ButtonTheme } from "../../assets/Themes/Theme";
 
 const Header = () => {
   return (
@@ -18,6 +19,7 @@ const Header = () => {
           >
             Sign In
           </Button>
+
           <Button
             variant="contained"
             disableElevation
