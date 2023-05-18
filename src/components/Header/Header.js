@@ -12,13 +12,16 @@ const Header = () => {
         <nav className={styles.signBtns}>
           {/* <button class={`${styles.signIn} ${styles.button}`}>Sign In</button>
           <button class={`${styles.signUp} ${styles.button}`}>Sign Up</button> */}
-          <Button variant="text" className={`${styles.button} ${signIn}`}>
+          <Button
+            variant="text"
+            className={`${styles.button} ${styles.signIn}`}
+          >
             Sign In
           </Button>
           <Button
             variant="contained"
             disableElevation
-            className={`${styles.button} ${signUp}`}
+            className={`${styles.button} ${styles.signUp}`}
           >
             Sign Up
           </Button>
