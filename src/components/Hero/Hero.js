@@ -2,6 +2,7 @@ import styles from "./Hero.module.css";
 import TextField from "@mui/material/TextField";
 // import Stack from "@mui/material/Stack";
 import Autocomplete from "@mui/material/Autocomplete";
+import hero from "../../assets/images/heyfoods-hero-side.jpg";
 
 const Hero = () => {
   return (
