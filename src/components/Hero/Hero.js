@@ -2,7 +2,7 @@ import styles from "./Hero.module.css";
 import TextField from "@mui/material/TextField";
 // import Stack from "@mui/material/Stack";
 import Autocomplete from "@mui/material/Autocomplete";
-import hero from "../../assets/images/heyfoods-hero-side.jpg";
+import hero from "../../assets/images/heyfoods-hero-side2.svg";
 
 const Hero = () => {
   return (
@@ -28,7 +28,13 @@ const Hero = () => {
           )}
         />
       </div>
-      <div className={styles.imageArea}></div>
+      <div className={styles.imageArea}>
+        <img
+          className={styles.heroImage}
+          src={hero}
+          alt="an image of a table set with different dishes digital art"
+        />
+      </div>
     </section>
   );
 };
