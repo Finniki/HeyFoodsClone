@@ -6,7 +6,7 @@ import hero from "../../assets/images/heyfoods-hero-side2.svg";
 
 const Hero = () => {
   return (
-    <section>
+    <section className={styles.heroSection}>
       <div className={styles.textArea}>
         <h1>
           Your food <span>delivered</span> within minutes
