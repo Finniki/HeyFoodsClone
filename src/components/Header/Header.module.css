@@ -2,8 +2,10 @@
     display: flex;
     justify-content: space-between;
     height: 80px;
-    width: 87%;
+    width: 100%;
+    padding: 0 6.5%;
     margin: 0 auto;
+    border-bottom: 1px solid #e8e8e8;
 }
 .brandLogo {
     width: 145px;
