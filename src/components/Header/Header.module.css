@@ -12,4 +12,24 @@
     border-top: 1px solid #fff;
     
 }
+.signBtns {
+    margin-top: 20px;
+    display: flex;
+}
+ .button {
+    font-size: 1.7rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    width: 118px;
+    height: 48px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    text-transform: capitalize; 
+}
+.signIn {
+    color: #000 !important;
+
+}
+
 
