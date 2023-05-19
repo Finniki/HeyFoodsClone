@@ -1,8 +1,8 @@
 import styles from "./Header.module.css";
 import logo from "../../assets/images/heyfoodlogo2.png";
 import { Button } from "@mui/material";
-import { ThemeProvider } from "styled-components";
-import { buttonTheme } from "../../assets/Themes/Theme";
+import { ThemeProvider } from "@emotion/react";
+import theme from "../../assets/Themes/Theme";
 
 const Header = () => {
   return (
@@ -12,22 +12,23 @@ const Header = () => {
           <img src={logo} className={styles.brandLogo} alt="HeyFoods logo" />
         </div>
         <nav className={styles.signBtns}>
-          {/* <button class={`${styles.signIn} ${styles.button}`}>Sign In</button>
-          <button class={`${styles.signUp} ${styles.button}`}>Sign Up</button> */}
-          <Button
-            variant="text"
-            className={`${styles.button} ${styles.signIn}`}
-          >
-            Sign In
-          </Button>
-          <
-          <Button
-            variant="contained"
-            disableElevation
-            className={`${styles.button} ${styles.signUp}`}
-          >
-            Sign Up
-          </Button>
+          <ThemeProvider theme={theme}>
+            <Button
+              variant="text"
+              color="secondary"
+              className={`${styles.button} ${styles.signIn}`}
+            >
+              Sign In
+            </Button>
+            <Button
+              variant="contained"
+              disableElevation
+              color="primary"
+              className={`${styles.button} ${styles.signUp}`}
+            >
+              Sign Up
+            </Button>
+          </ThemeProvider>
         </nav>
       </header>
     </div>
