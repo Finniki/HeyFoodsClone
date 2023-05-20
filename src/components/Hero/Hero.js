@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section className={styles.heroSection}>
       <div className={styles.textArea}>
-        <h1>
+        <h1 className={styles.heroText}>
           Your food <span>delivered</span> within minutes
         </h1>
         <Autocomplete
