@@ -12,6 +12,7 @@ const Hero = () => {
           Your food <span>delivered</span> within minutes.
         </h1>
         <Autocomplete
+          className={styles.input}
           freeSolo
           id="free-solo-2-demo"
           disableClearable
