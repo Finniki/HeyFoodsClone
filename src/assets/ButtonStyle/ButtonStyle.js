@@ -9,3 +9,5 @@ const buttonStyles = {
   cursor: "pointer",
   textTransform: "capitalize",
 };
+
+export default buttonStyles;
