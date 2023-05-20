@@ -18,6 +18,7 @@ const Header = () => {
               variant="text"
               color="secondary"
               className={`${styles.button} ${styles.signIn}`}
+              sx={buttonStyles}
             >
               Sign In
             </Button>
@@ -25,6 +26,7 @@ const Header = () => {
               variant="contained"
               disableElevation
               color="primary"
+              sx={buttonStyles}
               className={`${styles.button} ${styles.signUp}`}
             >
               Sign Up
