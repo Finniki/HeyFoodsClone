@@ -11,4 +11,6 @@
     line-height: 90px;
     text-align: start;
 }
-
+.heroText span {
+    color: #00A205;
+}
