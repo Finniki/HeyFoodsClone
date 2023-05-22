@@ -9,9 +9,13 @@ const Hero = () => {
         <h1 className={styles.heroText}>
           Your food <span>delivered</span> within minutes.
         </h1>
-        <div className={styles.autocompleteDiv}>
+        <div className={styles.deliveryDiv}>
           <label htmlFor="location"></label>
-          <input type="text" className={styles.input} />
+          <input
+            type="text"
+            className={styles.input}
+            placeholder="Enter delivery address"
+          />
         </div>
       </div>
       <div className={styles.imageArea}>
