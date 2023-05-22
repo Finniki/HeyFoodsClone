@@ -19,6 +19,7 @@ const Hero = () => {
             className={styles.input}
             placeholder="Enter delivery address"
           />
+          <ThemeProvider></ThemeProvider>
         </div>
       </div>
       <div className={styles.imageArea}>
