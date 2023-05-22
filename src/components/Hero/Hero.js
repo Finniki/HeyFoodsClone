@@ -11,25 +11,7 @@ const Hero = () => {
         <h1 className={styles.heroText}>
           Your food <span>delivered</span> within minutes.
         </h1>
-        <div className={styles.autocompleteDiv}>
-          <Autocomplete
-            className={styles.input}
-            freeSolo
-            id="free-solo-2-demo"
-            disableClearable
-            //   options={top100Films.map((option) => option.title)}
-            renderInput={(params) => (
-              <TextField
-                {...params}
-                label="Enter delivery location"
-                InputProps={{
-                  ...params.InputProps,
-                  type: "search",
-                }}
-              />
-            )}
-          />
-        </div>
+        <div className={styles.autocompleteDiv}></div>
       </div>
       <div className={styles.imageArea}>
         <img
