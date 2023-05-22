@@ -22,4 +22,7 @@
     background-color: #eee;
     padding: 2% 10% ;
 }
-
+.input::placeholder {
+    font-size: 18px;
+    color: #555;
+}
