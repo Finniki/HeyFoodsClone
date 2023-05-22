@@ -1,5 +1,6 @@
 import styles from "./Hero.module.css";
 import { Button } from "@mui/material";
+import { ThemeProvider } from "@emotion/react";
 import hero from "../../assets/images/heyfoods-hero-side2.svg";
 
 const Hero = () => {
