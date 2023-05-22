@@ -19,7 +19,17 @@ const Hero = () => {
             className={styles.input}
             placeholder="Enter delivery address"
           />
-          <ThemeProvider></ThemeProvider>
+          <ThemeProvider theme={theme}>
+            <Button
+              variant="contained"
+              disableElevation
+              color="primary"
+              sx={buttonStyles}
+              className={`${styles.button} ${styles.signUp}`}
+            >
+              Find restaurants
+            </Button>
+          </ThemeProvider>
         </div>
       </div>
       <div className={styles.imageArea}>
