@@ -1,7 +1,8 @@
 import styles from "./Hero.module.css";
-import TextField from "@mui/material/TextField";
-// import Stack from "@mui/material/Stack";
-import Autocomplete from "@mui/material/Autocomplete";
+import { Button } from "@mui/material";
+import { ThemeProvider } from "@emotion/react";
+import buttonStyles from "../../assets/ButtonStyle/ButtonStyle";
+import theme from "../../assets/Themes/Theme";
 import hero from "../../assets/images/heyfoods-hero-side2.svg";
 
 const Hero = () => {
@@ -11,23 +12,25 @@ const Hero = () => {
         <h1 className={styles.heroText}>
           Your food <span>delivered</span> within minutes.
         </h1>
-        <Autocomplete
-          className={styles.input}
-          freeSolo
-          id="free-solo-2-demo"
-          disableClearable
-          //   options={top100Films.map((option) => option.title)}
-          renderInput={(params) => (
-            <TextField
-              {...params}
-              label="Enter delivery location"
-              InputProps={{
-                ...params.InputProps,
-                type: "search",
-              }}
-            />
-          )}
-        />
+        <div className={styles.deliveryDiv}>
+          <label htmlFor="location"></label>
+          <input
+            type="text"
+            className={styles.input}
+            placeholder="Enter delivery address"
+          />
+          <ThemeProvider theme={theme}>
+            <Button
+              variant="contained"
+              disableElevation
+              color="primary"
+              sx={buttonStyles}
+              className={`${styles.button} ${styles.signUp}`}
+            >
+              Find restaurants
+            </Button>
+          </ThemeProvider>
+        </div>
       </div>
       <div className={styles.imageArea}>
         <img
